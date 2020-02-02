@@ -22,11 +22,49 @@
   <main>
     <h1>Магазин готовых шаблонов</h1>
     <section>
-      <!--Здесь будет форма "Сетка" и "Особенности"-->
-      <button type="button">Показать</button>
+      <form action="https://echo.htmlacademy.ru" method="get">
+        <fieldset>
+          <legend>Сетка</legend>
+           <ul>
+             <li>
+               <input type="radio" name="net" value="adaptive" id="filter-adaptive" checked>
+               <label for="filter-adaptive">Адаптивная</label>
+             </li>
+             <li>
+               <input type="radio" name="net" value="fixed" id="filter-fixed">
+               <label for="filter-fixed">Фиксированная</label>
+             </li>
+              <input type="radio" name="net" value="flexible" id="filter-flexible">
+              <label for="filter-flexible">Резиновая</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset>
+         <legend>Особенности</legend>
+          <ul>
+            <li>
+              <input type="checkbox" name="Slider" id="filter-slider" checked>
+              <label for="filter-slider">Слайдер</label>
+            </li>
+              <input type="checkbox" name="benefits" id="filter-benefits">
+              <label for="filter-benefits">Блок преимуществ</label>
+            </li>
+              <input type="checkbox" name="news" id="filter-news" checked>
+              <label for="filter-news">Новости</label>
+            </li>
+              <input type="checkbox" name="gallery" id="filter-gallery">
+              <label for="filter-gallery">Галерея</label>
+            </li>
+            <li>
+              <input type="checkbox" name="cart" id="filter-cart">
+              <label for="filter-cart">Корзина</label>
+            </li>
+          </ul>
+        </fieldset>
+      <button type="submit">Показать</button>
     </section>
     <section>
-      <h2>Карточки товаров</h2>
+      <h2 class="visually-hidden">Карточки товаров</h2>
       <ul>
         <li>
           <a href="#">
@@ -89,7 +127,30 @@
           </a>
         </li>
       </ul>
+      <ul>
+        <li> <a href="https://htmlacademy-htmlcss.github.io/1275697-nerds-27/3/catalog.html">1</a>
+        <li> <a href="#">2</li>
+        <li><a href="#">3</li>
+        <li><a href="#">Следующая</li>
+      </ul>
     </section>
+    <div>
+     <h2>Напишите нам</h2>
+      <form action="https://echo.htmlacademy.ru" method="post">
+      <p>
+       <label for="user-name">Ваше имя:</label>
+       <input type="text" id="user-name" name="name" value="" placeholder="Имя Фамилия">
+      </p>
+      <p>
+       <label for="user-email">Ваш e-mail:</label>
+       <input type="email" id="user-email" name="email" placeholder="email@example.com" required>
+      </p>
+      <p>
+        <label for="letter-field">Текст письма:</label>
+        <textarea id="letter-field" name="letter" rows="5" placeholder="В свободной форме"></textarea>
+      </p>
+      <input type="submit" value="Отправить">
+    </div>
   </main>
   <footer>
     <div>
