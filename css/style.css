@@ -22,14 +22,14 @@ vertical-align: middle;
 border: none;
 }
 
-.main-navigation [
+.main-navigation {
 font-size: 16px;
 line-height: 30px;
 color: #000000;
 text-transform: uppercase;
 background-color: #eeeeee;
 list-style: none;
-]
+}
 
 .site-navigation a {
 color: #000000;
