@@ -75,11 +75,11 @@ text-transform: uppercase;
 background-color: #fb565a;
 }
 
-.button-site: hover {
+.button-site:hover {
 background-color: #e74246;
 }
 
-.button-site: active {
+.button-site:active {
 background-color: #d7373b;
 box-shadow: rgba (0, 1, 1, 0.1);
 }
@@ -88,11 +88,11 @@ box-shadow: rgba (0, 1, 1, 0.1);
 background-color: #00ca74;
 }
 
-.button-app: hover {
+.button-app:hover {
 background-color: #00bc6c;
 }
 
-.button-app: active {
+.button-app:active {
 background-color: #00aa62;
 box-shadow: rgba (0, 1, 1, 0.1);
 }
