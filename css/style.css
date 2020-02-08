@@ -17,6 +17,7 @@ text-decoration: none;
 font: inherit;
 text-align: center;
 color: #ffffff;
+font-weight: 700;
 text-transform: uppercase;
 vertical-align: middle;
 border: none;
@@ -28,6 +29,10 @@ line-height: 30px;
 color: #000000;
 text-transform: uppercase;
 background-color: #eeeeee;
+list-style: none;
+}
+
+.site-navigation {
 list-style: none;
 }
 
@@ -43,7 +48,8 @@ color: #fb565a;
 color:  rgba (0, 0, 0, 0.3);
 }
 
-.site-navigation a:focus {
+.site-navigation a:focus,
+site-navigation-current {
 text-decoration: underline;
 text-decoration-color: #fb565a;
 }
@@ -81,7 +87,7 @@ background-color: #e74246;
 
 .button-site:active {
 background-color: #d7373b;
-box-shadow: rgba (0, 1, 1, 0.1);
+box-shadow: 0px 3px 0 0 rgba(0, 1, 1, 0.1);
 }
 
 .button-app {
@@ -94,20 +100,37 @@ background-color: #00bc6c;
 
 .button-app:active {
 background-color: #00aa62;
-box-shadow: rgba (0, 1, 1, 0.1);
+box-shadow: 0px 3px 0 0 rgba(0, 1, 1, 0.1);
 }
 
 .button-presentation {
 background-color: #efc84a;
 }
 
-.button-presentation: hover {
+.button-presentation:hover {
 background-color: #eab534;
 }
 
-.button-presentation: active {
+.button-presentation:active {
 background-color: #e5a722;
-box-shadow: rgba (0, 1, 1, 0.1);
+box-shadow: 0px 3px 0 0 rgba(0, 1, 1, 0.1);
+}
+
+.filter-button {
+  background-colo: #eeeeee;
+}
+
+.button-price {
+  background-color: #fb565a;
+}
+
+.button-price:hover {
+  background-color: #e74246;
+}
+
+.button-price:hover {
+  background-color: #d7373b;
+  box-shadow: 0px 3px 0 0 rgba(0, 1, 1, 0.1);
 }
 
 .main-footer {
@@ -136,11 +159,51 @@ list-style: none;
 background-color: #e1e1e1;
 }
 
-.social-button: hover {
+.social-button:hover {
 background-color: #e74246;
 }
 
-.social-button: active {
+.social-button:active {
 background-color: #d7373b;
 box-shadow: rgba (0, 1, 1, 0.1);
 }
+
+.page-title {
+font: inherit;
+font-size: 55px;
+line-height: 55px;
+text-align: center;
+background-color: #eeeeee
+}
+
+.filter fieldset {
+  border: none;
+}
+
+.filter legend,
+.catalog-item-title {
+  font-size: 18px;
+  line-height: 30px;
+  text-align: left;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.filter ul{
+  list-style: none;
+  font-size: 16px;
+  line-height: 20px;
+  color: #283136;
+  text-align: left;
+}
+
+.catalog-category {
+  font-size: 16px;
+  text-align: center;
+  line-height: 18px;
+  color: #666666;
+}
+
+.catalog-item-title {
+  text-align: center;
+  }

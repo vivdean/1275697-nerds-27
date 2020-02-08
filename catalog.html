@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>Магазин</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-    
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
@@ -16,18 +16,18 @@
         <ul class="site-navigation">
           <li><a href="studio.html">Студия</a></li>
           <li><a href="clients.html">Клиенты</a></li>
-          <li><a href="catalog.html">Магазин</a></li>
+          <li class="site-navigation-current"><a href="catalog.html">Магазин</a></li>
           <li><a href="contacts.html">Контакты</a></li>
           <li><a href="cart.html">Корзина</a></li>
         </ul>
       </nav>
     </header>
   <main>
-    <h1>Магазин готовых шаблонов</h1>
-      <form action="https://echo.htmlacademy.ru" method="get">
+    <h1 class="page-title">Магазин готовых шаблонов</h1>
+      <form class="filter" action="https://echo.htmlacademy.ru" method="get">
         <fieldset>
-          <legend>Сетка</legend>
-           <ul>
+          <legend class="filter">Сетка</legend>
+           <ul class="filter">
              <li>
                <input type="radio" name="net" value="adaptive" id="filter-adaptive" checked>
                <label for="filter-adaptive">Адаптивная</label>
@@ -43,8 +43,8 @@
           </ul>
         </fieldset>
         <fieldset>
-         <legend>Особенности</legend>
-          <ul>
+         <legend class="filter">Особенности</legend>
+          <ul class="filter">
             <li>
               <input type="checkbox" name="slider" id="filter-slider" value="slider" checked>
               <label for="filter-slider">Слайдер</label>
@@ -67,65 +67,65 @@
             </li>
           </ul>
         </fieldset>
-      <button type="submit">Показать</button>
+      <button class="button filter-button" type="submit">Показать</button>
     </form>
-    <section>
+    <section class="catalog">
       <h2 class="visually-hidden">Карточки товаров</h2>
-      <ul>
-        <li>
+      <ul class="catalog-list">
+        <li class="catalog-item">
             <img src="img/img-sedona-jpg.jpg" width="360" height="576" alt="Седона">
              <div>
-              <a href="#">Sedona</a>
-              <p>Информационный сайт для туристов</p>
-              <p><a href="#">9 900 руб.</a></p>
+              <a class="catalog-item-title" href="#">Sedona</a>
+              <p class="catalog-category">Информационный сайт для туристов</p>
+              <p><a class="button button-price" href="#">9 900 руб.</a></p>
              </div>
         </li>
-        <li>
+        <li class="catalog-item">
           <img src="img/img-pink-jpg.jpg" width="360" height="576" alt="Пинк">
             <div>
-             <a href="#>Pink App</a>
-             <p>Продуктовый лендинг приложения для iOS и Android</p>
-             <p><a href="#">9 900 руб.</a></p>
+             <a class="catalog-item-title" href="#">Pink App</a>
+             <p class="catalog-category">Продуктовый лендинг приложения для iOS и Android</p>
+             <p><a class="button button-price" href="#">9 900 руб.</a></p>
             </div>
         </li>
-        <li>
+        <li class="catalog-item">
           <img src="img/img-barbershop-jpg.jpg" width="360" height="576" alt="Бородинский">
             <div>
-             <a href="#>Barbershop</a>
-             <p>Сайт салона красоты.Для мужчин, да.</p>
-             <p><a href="#">9 900 руб.</a></p>
+             <a class="catalog-item-title" href="#">Barbershop</a>
+             <p class="catalog-category">Сайт салона красоты.Для мужчин, да.</p>
+             <p><a class="button button-price" href="#">9 900 руб.</a></p>
             </div>
         </li>
-        <li>
+        <li class="catalog-item">
           <img src="img/img-mishka-jpg.jpg" width="360" height="576" alt="Мишка">
             <div>
-             <a href="#>MISHKA</a>
-             <p>Интернет-магазин вязаных игрушек</p>
-             <p><a href="#">9 900 руб.</a></p>
+             <a class="catalog-item-title" href="#">MISHKA</a>
+             <p class="catalog-category">Интернет-магазин вязаных игрушек</p>
+             <p><a class="button button-price" href="#">9 900 руб.</a></p>
             </div>
         </li>
-        <li>
+        <li class="catalog-item">
           <img src="img/img-aplus-jpg.jpg" width="360" height="576" alt="Аплюс">
             <div>
-             <a href="#>A Plus</a>
-             <p>Лендинг курсов повышения квалификации</p>
-             <p><a href="#">9 900 руб.</a></p>
+             <a class="catalog-item-title" href="#">A Plus</a>
+             <p class="catalog-category">Лендинг курсов повышения квалификации</p>
+             <p><a class="button button-price" href="#">9 900 руб.</a></p>
             </div>
         </li>
-        <li>
+        <li class="catalog-item">
           <img src="img/img-kvast-jpg.jpg" width="360" height="576" alt="Кваст">
             <div>
-             <a href="#>КВАСТ</a>
-             <p>Промо-сайт производителя крафтового кваса</p>
-             <p><a href="#">9 900 руб.</a></p>
+             <a class="catalog-item-title" href="#">КВАСТ</a>
+             <p class="catalog-category">Промо-сайт производителя крафтового кваса</p>
+             <p><a class="button button-price" href="#">9 900 руб.</a></p>
             </div>
         </li>
       </ul>
-      <ul>
-        <li><a href="#">1</a></li>
-        <li><a href="#">2</a></li>
-        <li><a href="#">3</a></li>
-        <li><a href="#">Следующая</a></li>
+      <ul class="pagination-list">
+        <li class="pagination-item pagination-item-current"><a href="#">1</a></li>
+        <li class="pagination-item"><a href="#">2</a></li>
+        <li class="pagination-item"><a href="#">3</a></li>
+        <li class="pagination-item"><a href="#">Следующая</a></li>
       </ul>
     </section>
     </main>
@@ -138,7 +138,7 @@
       </ul>
     </div>
     <p>Давайте дружить, это выгодно!</p>
-    <p>Скидка 10% для друзей из социальных сетей.</p>
+    <p class="discount">Скидка 10% для друзей из социальных сетей.</p>
   </footer>
   <section class="modal">
   <form action="https://echo.htmlacademy.ru" method="post">
