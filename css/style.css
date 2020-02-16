@@ -199,6 +199,10 @@ text-align: center;
 background-color: #eeeeee
 }
 
+.filters {
+  width: 261px;
+}
+
 .filter fieldset {
   border: none;
 }
@@ -221,15 +225,21 @@ background-color: #eeeeee
 }
 
 .catalog {
+  width: 1000px;
+  }
+
+.catalog-columns {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   }
 
 .catalog-list {
   display: flex;
   flex-wrap: wrap;
-  width: 1000px;
   justify-content: space-around;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 60px;
 }
 
 .catalog-category {
@@ -237,6 +247,16 @@ background-color: #eeeeee
   text-align: center;
   line-height: 18px;
   color: #666666;
+}
+
+.catalog-item {
+  width: 360px;
+  margin-bottom: 33px;
+  margin-right: 40px;
+}
+
+.catalog-item:nth-child(2n) {
+  margin-right: 0;
 }
 
 .catalog-item-title {
