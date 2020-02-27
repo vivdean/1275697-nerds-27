@@ -3,15 +3,15 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
   <header>
-      <nav class="container main-navigation">
+      <nav class="main-navigation container">
       <a class="logo-navigation">
-        <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип дизайн-студии Нёрдс">
+        <img src="img/nerds-logo.png" width="160" height="65" alt="Логотип дизайн-студии Нёрдс">
       </a>
       <ul class="site-navigation">
         <li><a href="studio.html">Студия</a></li>
@@ -21,7 +21,41 @@
         <li class="cart"><a href="cart.html">Корзина</a></li>
       </ul>
     </nav>
+    <section class="slider container">
+      <ul class="slider-list">
+        <li class="slider-item">
+          <div class="slider-wrapper">
+          <h3>Долго, дорого, скрупулезно.</h3>
+          <p>Математически выверенный дизайн <br>
+            для вашего сайта или мобильного приложения.</p>
+          <button type="button" class="button slider-button">Узнать больше</button>
+          </div>
+          <img src="../img/slide-picture.png" width="698" height="413" alt="Слайдер">
+        </li>
+        <li class="slider-item-hidden visually-hidden">
+          <div class="slider-wrapper">
+          <h3>Любим математику<br>
+            как никто другой</h3>
+          <p>Никакого креатива, только математические формулы <br>
+            для расчета идеальных пропорций.</p>
+          <button type="button" class="button slider-button">Узнать больше</button>
+          </div>
+          <img src="../img/slide-picture2.png" width="663" height="430" alt="Слайдер">
+        </li>
+        <li class="slider-item-hidden visually-hidden">
+          <div class="slider-wrapper">
+          <h3>Только ночь,<br>
+            только хардкор</h3>
+          <p>Работать днем, как все? Мы против этого.<br>
+            Ближе к полуночи работа только начинается.</p>
+            <button type="button" class="button slider-button">Узнать больше</button>
+            </div>
+            <img src="../img/slide-picture3.png" width="759" height="411" alt="Слайдер">
+        </li>
+        </ul>
+      </section>
     </header>
+
   <main class="container">
     <h1 class="visually-hidden">Дизайн-студия Нёрдс</h1>
     <section class="features">
@@ -45,7 +79,49 @@
       </ul>
     </section>
 
-      <form class="visually-hidden" action="https://echo.htmlacademy.ru" method="post">
+    <section class="services-columns">
+      <div class="services-list">
+       <h2>Мы — маленькая, но гордая дизайн-студия из Краснодара. </h2>
+       <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет
+        превыше креатива. Работаем не покладая рук, как роботы.</p>
+       <ul>Выполняем заказы на разработку:
+        <li>Веб-сайтов любой сложности</li>
+        <li>Мобильных приложении для iOS и Android</li>
+        <li>Слайдшоу и видео для корпоративных презентаций</li>
+       </ul>
+      </div>
+      <div class="services-facts">
+       <img src="../img/nerds-picture.jpg" width="360px" height="208" alt="Логотип студии Нердс">
+       <ul>с 2004 года любим точность во всем:
+        <li><span>146%</span>Уровень самоотдачи</li>
+        <li><span>100%</span>Соблюдение сроков</li>
+        <li><span>50%</span>Минимальная предоплата</li>
+       </ul>
+      </div>
+      </section>
+     
+    <section class="partners">
+      <ul>
+        <li><a href="https://htmlacademy.ru/intensive/htmlcss">
+         <img src="../img/htmlacademy-logo.jpg" width="199" height="68" alt="Логотип Htmlacademy">
+         </a>
+        </li>
+        <li><a href="#">
+         <img src="../img/borodinski-logo.jpg" width="209" height="90" alt="Логотип Borodinski">
+         </a>
+        </li>
+        <li><a href="#">
+         <img src="../img/pink-logo.jpg" width="185" height="52" alt="Логотип Pink">
+         </a>
+        </li>
+        <li><a href="#">
+         <img src="../img/mishka-logo.jpg" width="173" height="84" alt="Логотип Mishka">
+         </a>
+        </li>
+      </ul>
+    </section>
+    
+        <form class="visually-hidden" action="https://echo.htmlacademy.ru" method="post">
       <h2>Напишите нам</h2>
       <p>
        <label for="user-name">Ваше имя:</label>
@@ -64,7 +140,11 @@
 
   </main>
 
-  <footer class="container main-footer">
+  <footer>
+    <div class="map">
+      <img src="../img/слой 2.jpg" width="1440" height="416" alt="ул.Большая Конюшенная д.19/8">
+    </div>
+    <div class="container main-footer">
     <div class="footer-social">
       <ul>
         <li><a class="social-button" href="#">
@@ -93,6 +173,7 @@
     <div class="footer-discount">
       <b>Давайте дружить, это выгодно!</b><br>
       <p>Скидка 10% для друзей из социальных сетей.</p>
+    </div>
     </div>
   </footer>
   </body>

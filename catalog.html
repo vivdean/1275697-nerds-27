@@ -3,13 +3,13 @@
   <head>
     <meta charset="utf-8">
     <title>Магазин</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header>
-        <nav class="container main-navigation">
+       <nav class="main-navigation container ">
         <a class="logo-navigation" href="index.html">
           <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип дизайн-студии Нёрдс">
         </a>
@@ -95,12 +95,18 @@
     </section>
 
     <section class="catalog">
+      <ul class="sorter">
+        <li>Сортировать:</li>
+        <li><a href="#">По цене</a></li>
+        <li><a href="#">По типу</a></li>
+        <li><a href="#">По названию</a></li>
+      </ul>
       <h2 class="visually-hidden">Карточки товаров</h2>
       <ul class="catalog-list">
         <li class="catalog-item">
           <img class="browser" src="img/browser.svg" width="360" height="40">
           <img src="img/img-sedona-jpg.jpg" width="360" height="576" alt="Седона">
-             <div class="catalog-discription">
+             <div class="catalog-description">
               <a class="catalog-item-title" href="#">Sedona</a>
               <p class="catalog-category">Информационный сайт<br>для туристов</p>
               <p><a class="button button-price" href="#">9 900 руб.</a></p>
@@ -109,7 +115,7 @@
         <li class="catalog-item">
           <img class="browser" src="img/browser.svg" width="360" height="40">
           <img src="img/img-pink-jpg.jpg" width="360" height="576" alt="Пинк">
-            <div class="catalog-discription">
+            <div class="catalog-description">
              <a class="catalog-item-title" href="#">Pink App</a>
              <p class="catalog-category">Продуктовый лендинг <br> приложения для iOS и Android</p>
              <p><a class="button button-price" href="#">9 900 руб.</a></p>
@@ -118,7 +124,7 @@
         <li class="catalog-item">
           <img class="browser" src="img/browser.svg" width="360" height="40">
           <img src="img/img-barbershop-jpg.jpg" width="360" height="576" alt="Бородинский">
-            <div class="catalog-discription">
+            <div class="catalog-description">
              <a class="catalog-item-title" href="#">Barbershop</a>
              <p class="catalog-category">Сайт салона красоты.<br> Для мужчин, да.</p>
              <p><a class="button button-price" href="#">9 900 руб.</a></p>
@@ -127,7 +133,7 @@
         <li class="catalog-item">
           <img class="browser" src="img/browser.svg" width="360" height="40">
           <img src="img/img-mishka-jpg.jpg" width="360" height="576" alt="Мишка">
-            <div class="catalog-discription">
+            <div class="catalog-description">
              <a class="catalog-item-title" href="#">MISHKA</a>
              <p class="catalog-category">Интернет-магазин <br> вязаных игрушек</p>
              <p><a class="button button-price" href="#">9 900 руб.</a></p>
@@ -136,7 +142,7 @@
         <li class="catalog-item">
           <img class="browser" src="img/browser.svg" width="360" height="40">
           <img src="img/img-aplus-jpg.jpg" width="360" height="576" alt="Аплюс">
-            <div class="catalog-discription">
+            <div class="catalog-description">
              <a class="catalog-item-title" href="#">A Plus</a>
              <p class="catalog-category">Лендинг курсов повышения<br> квалификации</p>
              <p><a class="button button-price" href="#">9 900 руб.</a></p>
@@ -145,7 +151,7 @@
         <li class="catalog-item">
           <img class="browser" src="img/browser.svg" width="360" height="40">
           <img src="img/img-kvast-jpg.jpg" width="360" height="576" alt="Кваст">
-            <div class="catalog-discription">
+            <div class="catalog-description">
              <a class="catalog-item-title" href="#">КВАСТ</a>
              <p class="catalog-category">Промо-сайт производителя<br> крафтового кваса</p>
              <p><a class="button button-price" href="#">9 900 руб.</a></p>
