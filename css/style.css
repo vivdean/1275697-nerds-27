@@ -689,21 +689,21 @@ box-shadow: rgba (0, 1, 1, 0.1);
   box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
 }
 
-.sorter {
+.sorter-list {
   list-style: none;
   
   display: flex;
   justify-content: space-between;
   }
 
-.sorter li:first-of-type {
+.sorter-list li:first-of-type {
   font-size: 18px;
   line-height: 24px;
   text-transform: uppercase;
   font-weight: 700;
 }
 
-.sorter a {
+.sorter-list a {
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
@@ -711,11 +711,12 @@ box-shadow: rgba (0, 1, 1, 0.1);
   color:#000000;
 }
 
-.sorter:nth-child(3) li {
-  color: red;
+.sorter-list li:nth-child(3) a{
+  color: rgba(0, 0, 0, 0.3);
 }
-
-
+.sorter-list li:last-child a{
+  color: rgba(0, 0, 0, 0.3);
+ }
 
 .catalog-columns {
   display: flex;
