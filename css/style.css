@@ -711,6 +711,12 @@ box-shadow: rgba (0, 1, 1, 0.1);
   color:#000000;
 }
 
+.sorter:nth-child(3) li {
+  color: red;
+}
+
+
+
 .catalog-columns {
   display: flex;
   justify-content: space-between;
@@ -731,7 +737,7 @@ box-shadow: rgba (0, 1, 1, 0.1);
   list-style: none;
 }
 
-.catalog-discription {
+.catalog-description {
  display: none;
  }
 
