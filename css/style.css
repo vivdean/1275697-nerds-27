@@ -113,12 +113,12 @@ img {
   height: 15px;
 }
 
-.site-navigation a:hover {
+.main-navigation a:hover {
   color: #fb565a;
   transition: 0.3s;
 }
 
-.site-navigation a:active {
+.main-navigation a:active {
   opacity: 0.3;
 }
 
