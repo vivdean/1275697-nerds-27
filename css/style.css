@@ -31,7 +31,9 @@ input[type="radio"].visually-hidden {
 
   white-space: nowrap;
 
-  clip-path: inset(100%);
+  -webkit-clip-path: inset(100%);
+
+          clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
@@ -68,16 +70,27 @@ input[type="radio"].visually-hidden {
 }
 
 .main-navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding-top: 51px;
 }
 
 .site-navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .main-navigation a {
@@ -87,6 +100,7 @@ input[type="radio"].visually-hidden {
   line-height: 30px;
   color: #000000;
   text-transform: uppercase;
+  -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
@@ -95,6 +109,8 @@ input[type="radio"].visually-hidden {
 }
 
 .cart {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   padding-left: 40px;
   position: relative;
@@ -162,8 +178,12 @@ input[type="radio"].visually-hidden {
 }
 
 .features-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   position: relative;
 }
 
@@ -225,6 +245,7 @@ input[type="radio"].visually-hidden {
   font-size: 16px;
   font-weight: 500;
   vertical-align: middle;
+  -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
@@ -238,7 +259,8 @@ input[type="radio"].visually-hidden {
 
 .feature-item-site:active .feature-button {
   background-color: #d7373b;
-  box-shadow: 0px 3px 0 0 rgba(0, 1, 1, 0.1);
+  -webkit-box-shadow: 0px 3px 0 0 rgba(0, 1, 1, 0.1);
+          box-shadow: 0px 3px 0 0 rgba(0, 1, 1, 0.1);
 }
 
 .feature-item-app .feature-button {
@@ -251,7 +273,8 @@ input[type="radio"].visually-hidden {
 
 .feature-item-app:active .feature-button {
   background-color: #00aa62;
-  box-shadow: 0px 3px 0 0 rgba(0, 1, 1, 0.1); 
+  -webkit-box-shadow: 0px 3px 0 0 rgba(0, 1, 1, 0.1);
+          box-shadow: 0px 3px 0 0 rgba(0, 1, 1, 0.1); 
 }
 
 .feature-item-present .feature-button {
@@ -264,14 +287,19 @@ input[type="radio"].visually-hidden {
 
 .feature-item-present:active .feature-button {
   background-color: #e5a722;
-  box-shadow: 0px 3px 0 0 rgba(0, 1, 1, 0.1);
+  -webkit-box-shadow: 0px 3px 0 0 rgba(0, 1, 1, 0.1);
+          box-shadow: 0px 3px 0 0 rgba(0, 1, 1, 0.1);
 }
 
 /*-----Стили services-----*/
 
 .services-columns {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin-bottom: 60px;
   border-top: 2px solid #eeeeee;
   padding-top: 40px;
@@ -346,8 +374,12 @@ input[type="radio"].visually-hidden {
 }
 
 .services-facts ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 .services-facts li:not(:last-child) {
@@ -370,10 +402,16 @@ input[type="radio"].visually-hidden {
 /*-----Стили partners-----*/
 
 .partners ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-bottom: 82px;
   border-top: 2px solid #eeeeee;
   border-bottom: 2px solid #eeeeee;
@@ -383,6 +421,7 @@ input[type="radio"].visually-hidden {
 
 .partners a {
   opacity: 0.2;
+  -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
@@ -436,10 +475,18 @@ input[type="radio"].visually-hidden {
 /*-----Стили footer-----*/
 
 .footer-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   
-  justify-content: flex-start;
-  align-items: flex-start;
+  -webkit-box-pack: start;
+  
+      -ms-flex-pack: start;
+  
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   padding: 57px 0;
 }
 
@@ -462,10 +509,15 @@ input[type="radio"].visually-hidden {
 }
 
 .footer-social {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 260px;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin: 0;
   padding: 0;
   text-align: center;
@@ -477,9 +529,18 @@ input[type="radio"].visually-hidden {
   background-color: #e1e1e1;
   border-radius: 50%;
 
+  display: -webkit-box;
+
+  display: -ms-flexbox;
+
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
@@ -489,7 +550,8 @@ input[type="radio"].visually-hidden {
 
 .social-button:active {
   background-color: #d7373b;
-  box-shadow: rgba(0, 1, 1, 0.1);
+  -webkit-box-shadow: rgba(0, 1, 1, 0.1);
+          box-shadow: rgba(0, 1, 1, 0.1);
 }
 
 .social-button:hover path {
@@ -513,7 +575,8 @@ input[type="radio"].visually-hidden {
   padding: 50px;
   padding-right: 57px;
   padding-top: 40px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   width: 319px;
   background: #ffffff;
   z-index: 1;
@@ -568,7 +631,10 @@ input[type="radio"].visually-hidden {
   position: relative;
   padding-left: 36px;
   cursor: pointer;
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   color: #283136;
   text-align: left;
 }
@@ -678,7 +744,8 @@ input[type="radio"].visually-hidden {
 
   border: 8px solid #ffffff;
   background-color:#ababab;
-  box-shadow: 0 2px 1px 0 #cfcfcf;
+  -webkit-box-shadow: 0 2px 1px 0 #cfcfcf;
+          box-shadow: 0 2px 1px 0 #cfcfcf;
   border-radius: 50%;
   
   cursor: pointer;
@@ -736,28 +803,41 @@ input[type="radio"].visually-hidden {
 
 .filter-button:hover {
   background-color: #dfdfdf;
+  -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
 .filter-button:active {
   background-color: #d5d5d5;
-  box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
+  -webkit-box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
+          box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
 }
 
 /*----catalog----*/
 
 .sorter {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: baseline;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
   margin-bottom: 50px;
   padding-top: 13px;
 }
 
 .sorter-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-start;
-  flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   width: 360px;
 }
 
@@ -771,6 +851,7 @@ input[type="radio"].visually-hidden {
   text-transform: uppercase;
   font-weight: 400;
   color: #000000;
+  -webkit-transition: 0.3s;
   transition: 0.3s;
   opacity: 0.3;
 }
@@ -800,6 +881,7 @@ input[type="radio"].visually-hidden {
   right: 0;
 
   opacity: 0.2;
+  -webkit-transition: 0.3s;
   transition: 0.3s;
   cursor: pointer;
 }
@@ -814,8 +896,11 @@ input[type="radio"].visually-hidden {
 
 .sorter-icon-down:hover::after,
 .sorter-icon-up:hover::after,
-.sorter-item:hover,
 .hover-sorter-item::after {
+  opacity: 0.3;
+}
+
+.sorter-item:hover {
   opacity: 0.6;
 }
 
@@ -828,8 +913,12 @@ input[type="radio"].visually-hidden {
 }
 
 .catalog-columns {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
 .catalog {
@@ -837,9 +926,13 @@ input[type="radio"].visually-hidden {
 }
 
 .catalog-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   padding: 0;
   margin: 0;
 }
@@ -850,6 +943,7 @@ input[type="radio"].visually-hidden {
   margin-right: 35px;
   position: relative;
   padding-top: 40px;
+  -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
@@ -911,6 +1005,7 @@ input[type="radio"].visually-hidden {
   font-weight: 700;
   line-height: 30px;
   color: #000000;
+  -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
@@ -929,6 +1024,7 @@ input[type="radio"].visually-hidden {
   padding: 10px 0;
   margin-top: 25px;
   background-color: #fb565a;
+  -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
@@ -938,14 +1034,18 @@ input[type="radio"].visually-hidden {
 
 .button-price:active {
   background-color: #d7373b;
-  box-shadow: 0px 3px 0 0 rgba(0, 1, 1, 0.1);
+  -webkit-box-shadow: 0px 3px 0 0 rgba(0, 1, 1, 0.1);
+          box-shadow: 0px 3px 0 0 rgba(0, 1, 1, 0.1);
 }
 
 /*----pagination---*/
 
 .pagination-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 
   padding: 0;
   margin-top: 28px;
@@ -967,6 +1067,7 @@ input[type="radio"].visually-hidden {
   padding: 10px 0;
   color: #000000;
   background-color: #eeeeee;
+  -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
@@ -980,11 +1081,13 @@ input[type="radio"].visually-hidden {
 
 .pagination-item a:active {
   background-color: #d5d5d5;
-  box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
+  -webkit-box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
+          box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
 }
 
 .pagination-item-current a {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   width: 50px;
   padding: 7px 0;
   background-color: #ffffff;
@@ -994,8 +1097,13 @@ input[type="radio"].visually-hidden {
 /*----Стилизация slider-----*/
 
 .slider-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   position: relative;
 }
 
@@ -1060,8 +1168,15 @@ input[type="radio"].visually-hidden {
 }
 
 .slider-button:active {
-  box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
+  -webkit-box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
+          box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
   background-color: #d7373b;
+}
+
+@-webkit-keyframes blinker {
+  0% { opacity: 1.0; }
+  50% { opacity: 0.3; }
+  100% { opacity: 1.0; } 
 }
 
 @keyframes blinker {
@@ -1070,10 +1185,11 @@ input[type="radio"].visually-hidden {
   100% { opacity: 1.0; } 
 }
 
-@keyframes shake {
+@-webkit-keyframes shake {
   0%,
   100% {
-    transform: translateX(0);
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
 
   10%,
@@ -1081,14 +1197,41 @@ input[type="radio"].visually-hidden {
   50%,
   70%,
   90% {
-    transform: translateX(-5px);
+    -webkit-transform: translateX(-5px);
+            transform: translateX(-5px);
   }
 
   20%,
   40%,
   60%,
   80% {
-    transform: translateX(5px);
+    -webkit-transform: translateX(5px);
+            transform: translateX(5px);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    -webkit-transform: translateX(-5px);
+            transform: translateX(-5px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    -webkit-transform: translateX(5px);
+            transform: translateX(5px);
   }
 }
 
@@ -1096,14 +1239,17 @@ input[type="radio"].visually-hidden {
   position: fixed;
   display: none;
   left: 50%;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
   width: 960px;
   margin: 0 auto;
   bottom: 10px;
   
   background-color: #ffffff;
-  box-shadow: 0px 20px 40px 0 rgba(0, 1, 1, 0.75);
-  box-sizing: border-box;
+  -webkit-box-shadow: 0px 20px 40px 0 rgba(0, 1, 1, 0.75);
+          box-shadow: 0px 20px 40px 0 rgba(0, 1, 1, 0.75);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   
   margin-top: 20px;
   padding: 40px 100px;
@@ -1112,11 +1258,13 @@ input[type="radio"].visually-hidden {
 
 .modal-show {
   display: block;
-  animation: blinker 1s;
+  -webkit-animation: blinker 1s;
+          animation: blinker 1s;
 }
 
 .modal-error {
-  animation: shake 0.6s;
+  -webkit-animation: shake 0.6s;
+          animation: shake 0.6s;
 }
 
 .modal-close {
@@ -1163,11 +1311,13 @@ input[type="radio"].visually-hidden {
 }
 
 .modal-close::before {
-  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 
 .modal-close::after {
-  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
 
 .modal h2 {
@@ -1177,9 +1327,14 @@ input[type="radio"].visually-hidden {
 }
 
 .user-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin-bottom: 36px;
 }
 
@@ -1238,4 +1393,3 @@ input[type="radio"].visually-hidden {
   margin-top: 37px;
   margin-bottom: 47px;
 }
-
