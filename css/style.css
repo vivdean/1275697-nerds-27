@@ -685,7 +685,6 @@ input[type="radio"].visually-hidden {
   background-color:#ababab;
   box-shadow: 0 2px 1px 0 #cfcfcf;
   border-radius: 50%;
-  
   cursor: pointer;
 }
 
@@ -1123,54 +1122,35 @@ input[type="radio"].visually-hidden {
 }
 
 @-webkit-keyframes shake {
-  0%,
-  100% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
+  0%,to {
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%)
   }
-
-  10%,
-  30%,
-  50%,
-  70%,
-  90% {
-    -webkit-transform: translateX(-5px);
-            transform: translateX(-5px);
+  
+  10%,30%,50%,70%,90% {
+  -webkit-transform: translateX(-48%);
+  transform: translateX(-48%)
   }
-
-  20%,
-  40%,
-  60%,
-  80% {
-    -webkit-transform: translateX(5px);
-            transform: translateX(5px);
+  
+  20%,40%,60%,80% {
+  -webkit-transform: translateX(-52%);
+  transform: translateX(-52%)
   }
 }
 
 @keyframes shake {
-  0%,
-  100% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
+  0%,to {
+  transform: translateX(-50%)
   }
-
-  10%,
-  30%,
-  50%,
-  70%,
-  90% {
-    -webkit-transform: translateX(-5px);
-            transform: translateX(-5px);
+  
+  10%,30%,50%,70%,90% {
+  transform: translateX(-48%)
   }
-
-  20%,
-  40%,
-  60%,
-  80% {
-    -webkit-transform: translateX(5px);
-            transform: translateX(5px);
+  
+  20%,40%,60%,80% {
+  transform: translateX(-52%)
   }
-}
+  }
 
 .modal {
   position: fixed;
