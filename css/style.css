@@ -1,4 +1,5 @@
 body {
+  min-width: 1200px;
   margin: 0;
   padding: 0;
   font-family: "Roboto", Arial, sans-serif;
@@ -84,6 +85,7 @@ input[type="radio"].visually-hidden {
   font-size: 16px;
   font-weight: 500;
   line-height: 30px;
+  vertical-align: middle;
   color: #000000;
   text-transform: uppercase;
   transition: 0.3s;
@@ -445,7 +447,7 @@ input[type="radio"].visually-hidden {
   color: #000000;
   font-size: 36px;
   font-weight: 700;
-  width: 545px;
+  width: 650px;
   margin-left: 140px;
   padding-top: 8px;
 }
@@ -511,6 +513,7 @@ input[type="radio"].visually-hidden {
 .map {
   position: relative;
   height: 416px;
+  background-image: url("../img/map.jpg");
 }
   
 .map iframe {
@@ -703,7 +706,7 @@ input[type="radio"].visually-hidden {
 .price-controls label {
   display: inline-block;
   width: 50%;
-
+  vertical-align: middle;
   font-size: 16px;
   text-transform: uppercase;
 }
@@ -760,7 +763,6 @@ input[type="radio"].visually-hidden {
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
-  width: 360px;
 }
 
 .sorter-item { 
@@ -788,7 +790,7 @@ input[type="radio"].visually-hidden {
 .sorter-icon-down {
   position: relative;
   margin: 0;
-  padding-right: 32px;
+  padding-left: 32px;
 }
 
 .sorter-icon-up::after,
@@ -797,7 +799,7 @@ input[type="radio"].visually-hidden {
   position: absolute;
   width: 11px;
   height: 10px;
-  top: 3px;
+  top: 5px;
   right: 0;
   opacity: 0.2;
   transition: 0.3s;
@@ -865,21 +867,21 @@ input[type="radio"].visually-hidden {
 }
 
 .catalog-description {
-  display: none;
+  position: absolute;
+  width: 360px;
+  bottom: 10px;
   text-align: center;
   vertical-align: middle;
   background-color: #eeeeee;
-  width: 360px;
+  width: 100%;
   padding-top: 28px;
   padding-bottom: 43px;
+  opacity: 0;
 }
 
-.catalog-item:hover .catalog-description {
-  display: block;
-  position: absolute;
-
-  width: 360px;
-  bottom: 10px;
+.catalog-item:hover .catalog-description, 
+.catalog-description:focus-within {
+  opacity: 1;
 }
 
 .catalog-item::before {
@@ -1140,15 +1142,18 @@ input[type="radio"].visually-hidden {
 
 @keyframes shake {
   0%,to {
-  transform: translateX(-50%)
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%)
   }
   
   10%,30%,50%,70%,90% {
-  transform: translateX(-48%)
+  -webkit-transform: translateX(-48%);
+          transform: translateX(-48%)
   }
   
   20%,40%,60%,80% {
-  transform: translateX(-52%)
+  -webkit-transform: translateX(-52%);
+          transform: translateX(-52%)
   }
   }
 
