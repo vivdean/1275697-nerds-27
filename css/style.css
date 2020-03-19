@@ -285,6 +285,7 @@ input[type="radio"].visually-hidden {
 
 .services-list {
   width: 650px;
+  margin-right: auto;
 }
 
 .services-list p,
@@ -514,6 +515,7 @@ input[type="radio"].visually-hidden {
   position: relative;
   height: 416px;
   background-image: url("../img/map.jpg");
+  overflow: hidden;
 }
   
 .map iframe {
@@ -761,8 +763,9 @@ input[type="radio"].visually-hidden {
 
 .sorter-list {
   display: flex;
-  justify-content: flex-start;
+  justify-content: flex-end;
   flex-wrap: wrap;
+  width: 370px;
 }
 
 .sorter-item { 
@@ -844,7 +847,7 @@ input[type="radio"].visually-hidden {
 .catalog-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
   padding: 0;
   margin: 0;
 }
